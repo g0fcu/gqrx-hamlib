@@ -19,10 +19,14 @@ Additional Python libraries required are:
   - getopt
   - xmlrpc.client
 
+fldigi should also have been compiled with xmlrpc support
+HINT: when running configure for fldigi use the command ' ./configure --with-flxmlrpc' then you will probably find you have to install a couple of fltk dev libraries before the install will complete successfully.
+
 To run it type the following on the command line in the directory where
 you have placed this file:
-  python ./gqrx-hamlib-fldigi.py [-f]
+  python3.5 ./gqrx-hamlib-fldigi.py [-f]
 
 The -f option will cause the program to tune fldigi to the gqrx frequency.
+In my case Python v3.5 has to be called by the command 'python3.5'
 
 Copyright 2017 Simon Kennedy, G0FCU, g0fcu at g0fcu.com
