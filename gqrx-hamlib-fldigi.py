@@ -19,7 +19,7 @@
 #
 # To run it type the following on the command line in the directory where
 # you have placed this file:
-#   python ./gqrx-hamlib-fldigi.py [-f]
+#   python3.5 ./gqrx-hamlib-fldigi.py [-f]
 #
 # The -f option will cause the program to tune fldigi to the gqrx frequency.
 #
