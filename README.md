@@ -13,7 +13,7 @@ you have placed this file:
 
 Only frequency is synchronised, synchronisation of e.g. mode could be added easily
 
-I have also added a version called gqrx-hamlib3, this version is written in Python 3.5 and supports tuning of frequency on fldigi
+I have also added a version called gqrx-hamlib-fldigi, this version is written in Python 3.5 and supports tuning of frequency on fldigi
 
 Additional Python libraries required are:
   - getopt
@@ -21,7 +21,7 @@ Additional Python libraries required are:
 
 To run it type the following on the command line in the directory where
 you have placed this file:
-  python ./gqrx-hamlib3.py [-f]
+  python ./gqrx-hamlib-fldigi.py [-f]
 
 The -f option will cause the program to tune fldigi to the gqrx frequency.
 
