@@ -7,8 +7,8 @@ To run it type the following on the command line in the directory where you have
                   python ./gqrx-hamlib.py
 - gqrx-hamlib-fldigi - this version written in Python 3.5 add the functionality to synchronise frequency with fldigi when run with the '-f' option. This version will be deprecated when the new GUI version has this function added (see below).
 Additional Python libraries required are:
-- getopt
-- xmlrpc.client
+	- getopt
+	- xmlrpc.client
 
 fldigi should also have been compiled with xmlrpc support
 
