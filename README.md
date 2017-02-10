@@ -2,10 +2,10 @@ gqrx-hamlib
 A gqrx to Hamlib interface to keep frequency between gqrx and a radio in sync when using gqrx as a panadaptor using Hamlib to control the radio
 
 Currently there are three version of this program.
- - gqrx-hamlib - written in Python 2.7, this is the basis version that synchronises frequency between gqrx and Hamlib
+	- gqrx-hamlib - written in Python 2.7, this is the basis version that synchronises frequency between gqrx and Hamlib
          To run it type the following on the command line in the directory where you have placed this file:
                   python ./gqrx-hamlib.py
- - gqrx-hamlib-fldigi - this version written in Python 3.5 add the functionality to synchronise frequency with fldigi when run with the '-f' option. This version will be deprecated when the new GUI version has this function added (see below).
+	- gqrx-hamlib-fldigi - this version written in Python 3.5 add the functionality to synchronise frequency with fldigi when run with the '-f' option. This version will be deprecated when the new GUI version has this function added (see below).
          Additional Python libraries required are:
                   - getopt
                   - xmlrpc.client
@@ -31,7 +31,9 @@ Currently there are three version of this program.
          - display.py
          - SIP
          - PyQt4
-         - to be continued.......
+         With the dependencies installed and the files main.py and display.py downloaded it should be possible to run the program with this command:
+             python3.5 ./main.py
+             In this case my install of Python v3.5 is called python3.5
          
 The Hamlib daemon (rigctld) must be running, gqrx started with the 'Remote Control via TCP' button clicked and comms to the radio working otherwise an error will occur when starting this program. Ports used are the defaults for gqrx and Hamlib.
 
