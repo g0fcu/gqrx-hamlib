@@ -9,11 +9,14 @@ To run it type the following on the command line in the directory where you have
 Additional Python libraries required are:
 - getopt
 - xmlrpc.client
+
 fldigi should also have been compiled with xmlrpc support
+
 HINT: when running configure for fldigi use the command ' ./configure --with-flxmlrpc' then you will probably 
 find you have to install a couple of fltk dev libraries before the install will complete successfully.
 
 To run it type the following on the command line in the directory whereyou have placed this file:
+	
 	python3.5 ./gqrx-hamlib-fldigi.py [-f]
 
 The -f option will cause the program to tune fldigi to the gqrx frequency.
@@ -26,11 +29,13 @@ In my case Python v3.5 has to be called by the command 'python3.5'
 	- one-time sync from Hamlib to gqrx.
       
 To build the GUI version from source you will need the following files and dependent libraries:
+	
 	- main.py
 	- display.py
 	- SIP
 	- PyQt4
 With the dependencies installed and the files main.py and display.py downloaded it should be possible to run the program with this command:
+	
 	python3.5 ./main.py
 In this case my install of Python v3.5 is called python3.5
          
