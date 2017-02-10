@@ -25,12 +25,13 @@ Currently there are three version of this program.
          - continuous sync from Hamlib to gqrx
          - one-time sync from gqrx to Hamlib
          - one-time sync from Hamlib to gqrx.
-      The file 'gqrxHamlib' in this git repository is an executable of this version.
+      
       To build the GUI version from source you will need the following files and dependent libraries:
          - main.py
          - display.py
          - SIP
          - PyQt4
+         - to be continued.......
          
 The Hamlib daemon (rigctld) must be running, gqrx started with the 'Remote Control via TCP' button clicked and comms to the radio working otherwise an error will occur when starting this program. Ports used are the defaults for gqrx and Hamlib.
 
