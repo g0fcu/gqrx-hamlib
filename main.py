@@ -97,17 +97,19 @@ class startControl(QThread):
                         self.reportErr.emit('hamlib',str(rig_mode))
                         return
                 if rig_mode != old_rig_mode:
-                    if rig_mode == 'CW':
-                        set_mode = 'CW-U'
-                    else:
-                        set_mode = rig_mode
+                    #print('!'+rig_mode+'!'+'!'+old_rig_mode+'!')
+                    #if rig_mode == 'CW':
+                    #    set_mode = rig_mode
+                        #set_mode = 'CW-U'
+                    #else:
+                    set_mode = rig_mode
                     # set gqrx to Hamlib frequency
                     rc = self.setmode(TCP_IP, GQRX_PORT, set_mode)
                     if rc[:4] == 'RPRT':
                         if rc[:6] != 'RPRT 0':
                             self.reportErr.emit('gqrx', str(rc))
                             return
-                    print('SetMode Return Code from GQRX: {0}'.format(rc))
+                        print('SetMode Return Code from GQRX: {0}'.format(rc))
                     old_rig_mode = rig_mode
                     old_gqrx_mode = rig_mode
                     
