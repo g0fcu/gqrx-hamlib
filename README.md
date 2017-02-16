@@ -27,7 +27,7 @@ In my case Python v3.5 has to be called by the command 'python3'
 	- continuous sync from gqrx to Hamlib
 	- one-time sync from gqrx to Hamlib
 	- one-time sync from Hamlib to gqrx.
-      This version has a separate git repo, see: github.com/g0fcu/gqrx-hamlib-gui
+      This version has a separate git repo, see: https://github.com/g0fcu/gqrx-hamlib-gui
          
 The Hamlib daemon (rigctld) must be running, gqrx started with the 'Remote Control via TCP' button clicked and comms to the radio working otherwise an error will occur when starting this program. Ports used are the defaults for gqrx and Hamlib.
 
